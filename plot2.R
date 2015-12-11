@@ -15,5 +15,5 @@ dt2 <- strptime(dt, "%d/%m/%Y %H:%M:%S")
 plot(dt2, gap, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 
 ## Save to PNG file
-dev.copy(png, "plot2.png")
+dev.copy(png, "plot2.png", width = 480, height = 480)
 dev.off()

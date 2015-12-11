@@ -11,5 +11,5 @@ gap <- as.numeric(levels(plot1_subset$Global_active_power))[as.integer(plot1_sub
 hist(gap, main="Global Active Power", col="red", xlab="Global Active Power (kilowatts)")
 
 ## Save to PNG file
-dev.copy(png, "plot1.png")
+dev.copy(png, "plot1.png", width = 480, height = 480)
 dev.off()
